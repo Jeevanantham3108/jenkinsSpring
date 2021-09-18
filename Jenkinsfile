@@ -41,7 +41,7 @@ pipeline {
         stage('Docker deploy'){
             steps {
                
-                sh 'docker run -itd -p  8081:8080 nihtin6425/jenkins-springboot:${BUILD_NUMBER}'
+                sh 'docker run -itd -p  8081:8080 nithin6425/jenkins-springboot:${BUILD_NUMBER}'
             }
         }
 
