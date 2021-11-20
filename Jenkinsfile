@@ -13,8 +13,7 @@ pipeline {
     		}
 stage('Build Docker image'){
         			steps {
-         	 			sh 'docker build -t
-jeeva3108/jenkins-springboot:${BUILD_NUMBER} .'
+         	 			sh "docker build -t jeeva3108/jenkins-springboot:${BUILD_NUMBER} ."
         			}
     		}
 stage('Docker Login'){
