@@ -18,11 +18,10 @@ stage('Build Docker image'){
     		}
 stage('Docker Login'){
         			steps {
-             			withCredentials([string(credentialsId: 'DockerId', variable:
-'Dockerpwd')]) {
+  
                 			sh "docker login -u jeeva3108 -p ${Dockerpwd}"
             				}
-        			}           	 
+        			           	 
     		}
 stage('Docker Push'){
         			steps {
